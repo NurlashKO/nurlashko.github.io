@@ -36,7 +36,7 @@ export class AppComponent {
   }
 
   charAdded(value) {
-    value = value.toLowerCase();
+    value = value.toLowerCase().trim();
     if (value == this.currentWord.romaji) {
       this.showInfo = true;
     }
